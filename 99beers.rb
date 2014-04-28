@@ -7,8 +7,8 @@ while beers_now > 0
   puts beers_now.to_s + ' bottles of beer on the wall'
   puts 'Would you like another beer?'
   answer = gets.chomp
-  if answer == 'yes'
-    puts 'test'
-  else
+  if answer == 'no' and beers_now > 1
+    puts 'Remember that there are still ' + beers_now.to_s + ' beers on the wall!'
+    break
   end
-  puts 'no more bottles of beer on the wall!!'
+end
