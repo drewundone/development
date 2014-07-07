@@ -1,4 +1,4 @@
-==begin
+=begin
 names = ['Ada', 'Belle', 'Chris', 'Drew']
 
 puts names

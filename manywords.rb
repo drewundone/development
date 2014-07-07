@@ -1,11 +1,12 @@
-
-words = []
-array = words.length
-puts 'Please enter a word:'
-words.push gets.chomp
-if words.length != array
-  'Please enter another word'
-  else
+puts 'Lets gather some words and sort them:'
+words =[]
+while true
+  word = gets.chomp
+  if word == ''
+    break
+  end
+words.push word
 end
 
-puts words
+puts 'Awesome!'
+puts words.sort
